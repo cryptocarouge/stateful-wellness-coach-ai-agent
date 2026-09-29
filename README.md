@@ -11,7 +11,7 @@ A production-proven personal wellness orchestration architecture built with **n8
 
 The private production system combines deterministic state machines, adaptive nutrition, progressive training, symptom-aware clinical guardrails, specialist-rule memory, multimodal progress analysis, behavioural pattern detection, operational fallbacks and long-term state recovery.
 
-This repository documents the engineering without exposing the person behind the production deployment, private health data, intimate content, photographs, identifiers, credentials, private prompts or production workflow JSON.
+This repository documents the engineering without exposing the person behind the production deployment, private health data, sensitive personal content, photographs, identifiers, credentials, private prompts or production workflow JSON.
 
 > **Deep dive:** [Architecture](docs/architecture.md) · [Feature matrix](docs/feature-matrix.md) · [State model](docs/state-model.md) · [Privacy boundary](docs/privacy-boundary.md) · [Case study](docs/case-study.md)
 
@@ -31,7 +31,7 @@ Verified against the active private production workflow on **2026-09-29**:
 - Baseline-vs-current multimodal photo analysis
 - Google Sheets persistence plus live-state bootstrap recovery
 - Undo snapshots, duplicate protection and stale-action protection
-- Optional private relationship/wellbeing module abstracted out of this public edition
+- Optional private wellbeing module excluded from this public edition
 
 These numbers describe the production architecture. They are not synthetic benchmark claims.
 
@@ -91,7 +91,7 @@ flowchart TD
 | Reporting | Daily, weekly and monthly summaries | Generic report pipeline |
 | UX | Telegram menus, 118 callbacks, undo, stale-action guards | Interaction architecture |
 | Visual training | Dynamic HTML → Gotenberg PNG → Telegram | Safe rendering example |
-| Private wellbeing | Relationship/intimacy support in production | Abstracted; private content excluded |
+| Private wellbeing | Optional private production module | Excluded from the public implementation |
 
 ## Safety hierarchy
 
@@ -122,7 +122,7 @@ This repository intentionally excludes:
 - names and personal profiles
 - health records and private symptoms
 - personal photographs and Telegram file IDs
-- relationship/intimacy content
+- sensitive personal content from private wellbeing modules
 - chat IDs, spreadsheet IDs and document URLs
 - API keys, bot tokens, OAuth credentials and webhooks
 - private prompts containing personal context
