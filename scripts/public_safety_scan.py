@@ -22,8 +22,13 @@ patterns = [
 ]
 
 hits = []
+FORBIDDEN_MEDIA = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".mp4", ".mov", ".webm"}
+
 for path in ROOT.rglob("*"):
     if not path.is_file() or path == SELF:
+        continue
+    if path.suffix.lower() in FORBIDDEN_MEDIA:
+        hits.append((str(path), "photo/video media file"))
         continue
     if any(part in SKIP_DIRS for part in path.parts):
         continue
