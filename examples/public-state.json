@@ -1,0 +1,38 @@
+{
+  "profile": {
+    "clientId": "demo-user",
+    "goal": "generic wellness and strength"
+  },
+  "daily": {
+    "date": "YYYY-MM-DD",
+    "macros": {
+      "kcal": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    },
+    "sleepHours": null,
+    "waterLitres": 0,
+    "steps": 0
+  },
+  "training": {
+    "cycleDay": 1,
+    "mode": "normal",
+    "recentResponse": "unknown",
+    "recentRpe": []
+  },
+  "recovery": {
+    "lowEnergy": false,
+    "poorSleep": false,
+    "stable": true
+  },
+  "safety": {
+    "redFlag": false,
+    "confirmedRules": []
+  },
+  "memory": {
+    "dailyLogs": [],
+    "weeklyReports": [],
+    "monthlyReports": []
+  }
+}
