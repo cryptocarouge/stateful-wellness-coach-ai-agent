@@ -13,7 +13,7 @@ Security and privacy take priority over reproducibility.
 - Names, personal profiles or identifying user attributes
 - Health records, symptom histories or clinician-specific notes
 - Private photographs or visual progress media
-- Relationship or intimacy content from production
+- Sensitive personal content from private wellbeing modules
 - Production prompts containing personal context
 - Credential objects or full n8n production exports
 - Proprietary production state snapshots
