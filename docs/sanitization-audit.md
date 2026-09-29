@@ -47,14 +47,14 @@ Checked for:
 
 **Decision:** represented only as generic schema fields and architectural patterns.
 
-### Private media and relationship content
+### Private media and sensitive personal content
 
 Checked for:
 
 - personal photographs
 - visual baselines
 - private media IDs
-- relationship/intimacy cards and text
+- sensitive personal cards, messages and private wellbeing content
 
 **Decision:** excluded. Only the existence of an optional private wellbeing module is acknowledged.
 
