@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="assets/header.svg" alt="Stateful Wellness Coach AI Agent" width="100%">
+  <img src="assets/header.svg" alt="Assistente Pessoal Loira" width="100%">
 </p>
 
 [![Public safety scan](https://github.com/cryptocarouge/stateful-wellness-coach-ai-agent/actions/workflows/public-safety.yml/badge.svg)](https://github.com/cryptocarouge/stateful-wellness-coach-ai-agent/actions/workflows/public-safety.yml)  
 **Portfolio-safe public architecture · production workflow and private user data remain private**
 
-# Stateful Wellness Coach AI Agent
+# Assistente Pessoal Loira
 
-A production-proven personal wellness orchestration architecture built with **n8n, JavaScript, Telegram, OpenAI, Google Sheets and Gotenberg**.
+A production-proven stateful personal-assistant architecture for wellness orchestration, built with **n8n, JavaScript, Telegram, OpenAI, Google Sheets and Gotenberg**.
 
 The private production system combines deterministic state machines, adaptive nutrition, progressive training, symptom-aware clinical guardrails, specialist-rule memory, multimodal progress analysis, behavioural pattern detection, operational fallbacks and long-term state recovery.
 
@@ -17,10 +17,10 @@ This repository documents the engineering without exposing the person behind the
 
 ## Production footprint
 
-Verified against the active private production workflow on **2026-09-29**:
+Verified against the active private production workflow on **2026-10-03**:
 
 - **87 workflow nodes**
-- **12 triggers**
+- **13 production triggers** (12 schedules + Telegram)
 - **33 Code nodes**
 - **118 distinct Telegram callback actions**
 - Deterministic nutrition parsing with FoodDB + aliases
@@ -29,6 +29,7 @@ Verified against the active private production workflow on **2026-09-29**:
 - Dynamic visual workout cards rendered to PNG through Gotenberg
 - Daily, weekly and monthly longitudinal reporting
 - Baseline-vs-current multimodal photo analysis
+- Phase-aware restarts: old history and prior baselines are preserved while a new 3-photo baseline starts the next phase
 - Google Sheets persistence plus live-state bootstrap recovery
 - Undo snapshots, duplicate protection and stale-action protection
 - Optional private wellbeing module excluded from this public edition
@@ -107,9 +108,9 @@ A lower-priority module cannot override a higher-priority safety decision.
 
 ## Resilient state
 
-A daily reset does not erase long-term intelligence.
+A daily reset — or the start of a new phase — does not erase long-term intelligence.
 
-Before daily state is cleared, the workflow persists a final record. Longitudinal state such as weight history, confirmed specialist rules, clinical learning, behavioural patterns, baseline media references and decision context is preserved.
+Before daily state is cleared, the workflow persists a final record. Longitudinal state such as weight history, confirmed specialist rules, clinical learning, behavioural patterns, baseline media references and decision context is preserved. Starting a new phase archives the previous baseline and requests a fresh front/side/back baseline without deleting historical records.
 
 If volatile workflow state is lost, the system can reconstruct operational state from persisted Google Sheets history.
 
