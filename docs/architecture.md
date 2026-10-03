@@ -140,7 +140,7 @@ Before daily state is reset, the final state is persisted.
 
 Long-lived state is preserved separately from ephemeral daily state.
 
-Google Sheets acts as durable operational history. A bootstrap path can rebuild live workflow state if volatile state is lost.
+Google Sheets acts as durable operational history. A bootstrap path can rebuild live workflow state if volatile state is lost. A phase restart archives the previous visual baseline, resets only current-period operating state and requests a new three-photo baseline while retaining longitudinal history.
 
 ## Core pattern
 
