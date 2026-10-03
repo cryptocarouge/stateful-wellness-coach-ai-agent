@@ -19,9 +19,9 @@ This repository documents the engineering without exposing the person behind the
 
 Verified against the active private production workflow on **2026-10-03**:
 
-- **87 workflow nodes**
+- **90 workflow nodes**
 - **13 production triggers** (12 schedules + Telegram)
-- **33 Code nodes**
+- **35 Code nodes**
 - **118 distinct Telegram callback actions**
 - Deterministic nutrition parsing with FoodDB + aliases
 - Stateful clinical support for digestive and lower-limb symptom tracking
