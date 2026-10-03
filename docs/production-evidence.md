@@ -10,9 +10,9 @@ This document records non-sensitive engineering facts verified from the private 
 
 | Metric | Verified value |
 | --- | ---: |
-| Active workflow nodes | 87 |
+| Active workflow nodes | 90 |
 | Production triggers | 13 (12 schedules + Telegram) |
-| Code nodes | 33 |
+| Code nodes | 35 |
 | Distinct Telegram callback actions found in code | 118 |
 | Central domain-engine size | ~6,100 lines |
 | AI-response extraction/handling engine | ~2,600 lines |
