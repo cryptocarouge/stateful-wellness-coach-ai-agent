@@ -4,14 +4,14 @@ This document records non-sensitive engineering facts verified from the private 
 
 ## Verification date
 
-**2026-09-29**
+**2026-10-03**
 
 ## Workflow-scale facts
 
 | Metric | Verified value |
 | --- | ---: |
 | Active workflow nodes | 87 |
-| Trigger nodes | 12 |
+| Production triggers | 13 (12 schedules + Telegram) |
 | Code nodes | 33 |
 | Distinct Telegram callback actions found in code | 118 |
 | Central domain-engine size | ~6,100 lines |
@@ -41,6 +41,9 @@ The production workflow contains implemented paths for:
 - longitudinal-state preservation
 - Google Sheets persistence
 - live-state bootstrap recovery
+- phase-aware baseline restart without historical-data deletion
+- untracked-day handling separated from nutrition compliance
+- daily-derived counter reconstruction to prevent cumulative-stat amplification
 - undo snapshots
 - stale callback protection
 
