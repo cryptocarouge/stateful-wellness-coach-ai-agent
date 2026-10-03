@@ -34,10 +34,12 @@ This matrix describes verified production capabilities while keeping implementat
 | Visual fallback | Simpler output if rendering fails | Documented |
 | Health-metric vision | Extracts only clearly visible structured metrics | Abstracted |
 | Baseline photo comparison | Baseline vs current monthly comparison | Architecture only |
+| Phase restart | Archives prior baseline, preserves longitudinal history and starts a new 3-photo baseline | Documented |
 | Daily reports | Persistent operational log | Documented |
 | Weekly reports | Trend summary and adaptation | Documented |
 | Monthly reports | Data + check-in + visual analysis | Documented |
 | Daily reset | Clears ephemeral state, preserves longitudinal state | Documented |
+| Untracked-day semantics | Missing activity is not counted as nutrition compliance | Documented |
 | Google Sheets backup | Durable state and history | Documented |
 | Bootstrap recovery | Rebuilds live state from durable history | Documented |
 | Private relationship wellbeing | Optional production module | Excluded from public implementation |
